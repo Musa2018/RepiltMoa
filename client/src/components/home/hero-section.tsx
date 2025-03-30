@@ -8,10 +8,10 @@ export const HeroSection = () => {
   const t = (key: any) => getTranslation(language, key);
 
   return (
-    <section className="relative bg-primary overflow-hidden">
-      <div className="container mx-auto px-6 py-12 lg:py-24 relative z-10">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className={`md:w-1/2 mb-8 md:mb-0 ${isRTL ? 'md:order-2 text-right' : ''}`}>
+    <section className="relative bg-primary overflow-hidden min-h-[60vh] flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-24 relative z-10">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className={`w-full md:w-1/2 space-y-6 ${isRTL ? 'md:order-2 text-right' : ''}`}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('site.slogan')}</h2>
             <p className="text-white text-lg mb-6">{t('site.tagline')}</p>
             <div className={`flex flex-wrap gap-4 ${isRTL ? 'justify-end' : ''}`}>
@@ -27,11 +27,11 @@ export const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div className={`md:w-1/2 ${isRTL ? 'md:order-1' : ''}`}>
+          <div className={`w-full md:w-1/2 ${isRTL ? 'md:order-1' : ''}`}>
             <img 
               src="https://images.unsplash.com/photo-1625246333195-78d73c5207fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" 
               alt="Palestinian farmers at work" 
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
         </div>
