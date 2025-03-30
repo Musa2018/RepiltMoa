@@ -1,5 +1,16 @@
 const translations = {
   en: {
+    // Footer
+    "footer.about": "About Us",
+    "footer.aboutText": "The Ministry of Agriculture works to develop sustainable agricultural practices and support Palestinian farmers through services, resources, and guidance.",
+    "footer.quickLinks": "Quick Links",
+    "footer.services": "Services",
+    "footer.contact": "Contact Us",
+    "footer.rights": "© 2024 Palestinian Ministry of Agriculture. All rights reserved.",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Use",
+    "footer.accessibility": "Accessibility",
+
     // Common
     "site.name": "Palestinian Ministry of Agriculture",
     "site.slogan": "Supporting Sustainable Agriculture in Palestine",
