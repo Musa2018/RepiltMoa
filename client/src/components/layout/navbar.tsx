@@ -15,14 +15,10 @@ export const Navbar = () => {
   const { language, isRTL } = useLanguage();
   const [location] = useLocation();
   const t = (key: any) => getTranslation(language, key);
-
+  
   const isActive = (path: string) => {
     return location === path;
   };
-
-  const dropdownAlign = isRTL ? 'end' : 'start';
-  const dropdownSide = isRTL ? 'right' : 'left';
-
 
   return (
     <nav className="mt-6">
@@ -34,7 +30,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-
+        
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -42,7 +38,7 @@ export const Navbar = () => {
                 {t('nav.about')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
+            <DropdownMenuContent align={isRTL ? 'end' : 'start'} className="w-48">
               <DropdownMenuItem asChild>
                 <Link href="/about/overview">
                   <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -74,7 +70,7 @@ export const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-
+        
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -82,7 +78,7 @@ export const Navbar = () => {
                 {t('nav.services')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
+            <DropdownMenuContent align={isRTL ? 'end' : 'start'} className="w-48">
               <DropdownMenuItem asChild>
                 <Link href="/services/farmer">
                   <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -114,7 +110,7 @@ export const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-
+        
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -122,7 +118,7 @@ export const Navbar = () => {
                 {t('nav.resources')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
+            <DropdownMenuContent align={isRTL ? 'end' : 'start'} className="w-48">
               <DropdownMenuItem asChild>
                 <Link href="/resources/publications">
                   <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -154,7 +150,7 @@ export const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-
+        
         <li>
           <Link href="/news">
             <a className={`px-3 py-2 rounded-md ${isActive('/news') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
@@ -162,7 +158,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-
+        
         <li>
           <Link href="/projects">
             <a className={`px-3 py-2 rounded-md ${isActive('/projects') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
@@ -170,7 +166,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-
+        
         <li>
           <Link href="/contact">
             <a className={`px-3 py-2 rounded-md ${isActive('/contact') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>

@@ -11,31 +11,31 @@ export const QuickLinks = () => {
     {
       title: t('quickLinks.services.title'),
       description: t('quickLinks.services.description'),
-      icon: 'fa-leaf text-[hsl(152,100%,20%)]',
+      icon: 'fa-leaf',
       links: [
-        { name: language === 'ar' ? 'التراخيص الزراعية' : 'Farming Licenses', url: '/services/licensing' },
-        { name: language === 'ar' ? 'إرشادات المحاصيل' : 'Crop Guidance', url: '/services/crop-guidance' },
-        { name: language === 'ar' ? 'برامج الدعم' : 'Support Programs', url: '/services/support' },
+        { name: 'Farming Licenses', url: '/services/licensing' },
+        { name: 'Crop Guidance', url: '/services/crop-guidance' },
+        { name: 'Support Programs', url: '/services/support' },
       ],
     },
     {
       title: t('quickLinks.resources.title'),
       description: t('quickLinks.resources.description'),
-      icon: 'fa-book text-[hsl(152,100%,20%)]',
+      icon: 'fa-book',
       links: [
-        { name: language === 'ar' ? 'الأدلة الزراعية' : 'Farming Guides', url: '/resources/farming-guides' },
-        { name: language === 'ar' ? 'الأوراق البحثية' : 'Research Papers', url: '/resources/research' },
-        { name: language === 'ar' ? 'تقارير السوق' : 'Market Reports', url: '/resources/market-reports' },
+        { name: 'Farming Guides', url: '/resources/farming-guides' },
+        { name: 'Research Papers', url: '/resources/research' },
+        { name: 'Market Reports', url: '/resources/market-reports' },
       ],
     },
     {
       title: t('quickLinks.news.title'),
       description: t('quickLinks.news.description'),
-      icon: 'fa-bullhorn text-[hsl(152,100%,20%)]',
+      icon: 'fa-bullhorn',
       links: [
-        { name: language === 'ar' ? 'البيانات الصحفية' : 'Press Releases', url: '/news/press-releases' },
-        { name: language === 'ar' ? 'الفعاليات القادمة' : 'Upcoming Events', url: '/news/events' },
-        { name: language === 'ar' ? 'التنبيهات الزراعية' : 'Agricultural Alerts', url: '/news/alerts' },
+        { name: 'Press Releases', url: '/news/press-releases' },
+        { name: 'Upcoming Events', url: '/news/events' },
+        { name: 'Agricultural Alerts', url: '/news/alerts' },
       ],
     },
   ];
@@ -48,8 +48,8 @@ export const QuickLinks = () => {
             <Card key={index} className="bg-gray-50 hover:shadow-md transition">
               <CardContent className="p-6">
                 <div className={`flex items-start ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <div className={`bg-primary rounded-full p-3 ${isRTL ? 'ml-4' : 'mr-4'}`}>
-                    <i className={`fas ${quickLink.icon.split(' ')[0]} text-white text-xl`}></i>
+                  <div className={`bg-secondary rounded-full p-3 ${isRTL ? 'ml-4' : 'mr-4'}`}>
+                    <i className={`fas ${quickLink.icon} text-white text-xl`}></i>
                   </div>
                   <div className={isRTL ? 'text-right' : ''}>
                     <h3 className="text-xl font-semibold text-primary mb-2">{quickLink.title}</h3>
