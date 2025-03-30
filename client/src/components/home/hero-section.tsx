@@ -29,7 +29,7 @@ export const HeroSection = () => {
           </div>
           <div className={`w-full md:w-1/2 ${isRTL ? 'md:order-1' : ''}`}>
             <img 
-              src="https://images.unsplash.com/photo-1615397349384-c3eb6fef33b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" 
+              src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" 
               alt="Palestinian farmers at work" 
               className="rounded-lg shadow-lg w-full h-auto object-cover aspect-[4/3]"
             />
