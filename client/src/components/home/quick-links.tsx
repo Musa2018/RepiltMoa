@@ -11,7 +11,7 @@ export const QuickLinks = () => {
     {
       title: t('quickLinks.services.title'),
       description: t('quickLinks.services.description'),
-      icon: 'fa-leaf text-primary',
+      icon: 'fa-leaf text-[hsl(152,100%,20%)]',
       links: [
         { name: language === 'ar' ? 'التراخيص الزراعية' : 'Farming Licenses', url: '/services/licensing' },
         { name: language === 'ar' ? 'إرشادات المحاصيل' : 'Crop Guidance', url: '/services/crop-guidance' },
@@ -21,7 +21,7 @@ export const QuickLinks = () => {
     {
       title: t('quickLinks.resources.title'),
       description: t('quickLinks.resources.description'),
-      icon: 'fa-book',
+      icon: 'fa-book text-[hsl(152,100%,20%)]',
       links: [
         { name: language === 'ar' ? 'الأدلة الزراعية' : 'Farming Guides', url: '/resources/farming-guides' },
         { name: language === 'ar' ? 'الأوراق البحثية' : 'Research Papers', url: '/resources/research' },
@@ -31,7 +31,7 @@ export const QuickLinks = () => {
     {
       title: t('quickLinks.news.title'),
       description: t('quickLinks.news.description'),
-      icon: 'fa-bullhorn',
+      icon: 'fa-bullhorn text-[hsl(152,100%,20%)]',
       links: [
         { name: language === 'ar' ? 'البيانات الصحفية' : 'Press Releases', url: '/news/press-releases' },
         { name: language === 'ar' ? 'الفعاليات القادمة' : 'Upcoming Events', url: '/news/events' },
