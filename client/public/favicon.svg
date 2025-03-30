@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <clipPath id="clip">
+      <path d="M50,50 h500 v500 h-500 z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <!-- Main eagle body in gold -->
+    <path fill="#C6A038" d="M300,100 c-80,0 -150,60 -150,140 c0,80 70,160 150,160 c80,0 150,-80 150,-160 c0,-80 -70,-140 -150,-140z"/>
+    <!-- Shield in center -->
+    <path fill="#E31D1C" d="M250,220 h100 v160 h-100z"/>
+    <!-- Palestinian flag colors on shield -->
+    <path fill="#000000" d="M250,220 h100 v40 h-100z"/>
+    <path fill="#FFFFFF" d="M250,260 h100 v40 h-100z"/>
+    <path fill="#007A3D" d="M250,300 l50,40 l-50,40 z"/>
+    <!-- Text "PALESTINE" -->
+    <text x="300" y="450" text-anchor="middle" font-size="40" fill="#C6A038">فلسطين</text>
+  </g>
+</svg>
