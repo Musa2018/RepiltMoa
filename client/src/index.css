@@ -10,37 +10,4 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
-  
-  [dir="rtl"] {
-    .navbar-menu {
-      @apply text-right;
-    }
-    
-    .dropdown-menu {
-      @apply text-right;
-    }
-    
-    .menu-icon {
-      @apply rotate-180;
-    }
-  }
-
-  [dir="rtl"] [role="menu"] {
-    @apply text-right;
-    transform-origin: top right;
-  }
-
-  [dir="rtl"] [role="menuitem"] {
-    @apply text-right pr-2;
-  }
-}
-
-@layer components {
-  .button-light {
-    @apply bg-white text-primary hover:bg-opacity-90 transition-colors;
-  }
-  
-  .button-filled {
-    @apply bg-primary text-white hover:bg-opacity-90 transition-colors;
-  }
 }
