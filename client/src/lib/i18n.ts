@@ -137,13 +137,13 @@ const translations = {
     // Quick Links
     "quickLinks.services.title": "الخدمات الزراعية",
     "quickLinks.services.description": "الوصول إلى التراخيص والتصاريح وبرامج الدعم للمزارعين.",
-    "quickLinks.services.licenses": "تراخيص المزارعين",
+    "quickLinks.services.licenses": "التراخيص الزراعية",
     "quickLinks.services.cropGuidance": "الإرشاد الزراعي",
     "quickLinks.services.supportPrograms": "برامج الدعم",
     
     // Submenu Items
-    "submenu.licenses": "التراخيص والتصاريح",
-    "submenu.cropGuidance": "إرشادات المحاصيل",
+    "submenu.licenses": "التراخيص الزراعية",
+    "submenu.cropGuidance": "إرشادات زراعية",
     "submenu.supportPrograms": "برامج الدعم",
     "submenu.publications": "المنشورات والأبحاث",
     "submenu.training": "المواد التدريبية",
