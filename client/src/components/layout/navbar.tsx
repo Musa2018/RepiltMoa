@@ -39,7 +39,7 @@ export const Navbar = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center">
-                {t('nav.about')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4 text-primary" />
+                {t('nav.about')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">

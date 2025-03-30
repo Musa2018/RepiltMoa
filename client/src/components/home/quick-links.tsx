@@ -11,11 +11,11 @@ export const QuickLinks = () => {
     {
       title: t('quickLinks.services.title'),
       description: t('quickLinks.services.description'),
-      icon: 'fa-leaf',
+      icon: 'fa-leaf text-primary',
       links: [
-        { name: 'Farming Licenses', url: '/services/licensing' },
-        { name: 'Crop Guidance', url: '/services/crop-guidance' },
-        { name: 'Support Programs', url: '/services/support' },
+        { name: language === 'ar' ? 'التراخيص الزراعية' : 'Farming Licenses', url: '/services/licensing' },
+        { name: language === 'ar' ? 'إرشادات المحاصيل' : 'Crop Guidance', url: '/services/crop-guidance' },
+        { name: language === 'ar' ? 'برامج الدعم' : 'Support Programs', url: '/services/support' },
       ],
     },
     {
@@ -23,9 +23,9 @@ export const QuickLinks = () => {
       description: t('quickLinks.resources.description'),
       icon: 'fa-book',
       links: [
-        { name: 'Farming Guides', url: '/resources/farming-guides' },
-        { name: 'Research Papers', url: '/resources/research' },
-        { name: 'Market Reports', url: '/resources/market-reports' },
+        { name: language === 'ar' ? 'الأدلة الزراعية' : 'Farming Guides', url: '/resources/farming-guides' },
+        { name: language === 'ar' ? 'الأوراق البحثية' : 'Research Papers', url: '/resources/research' },
+        { name: language === 'ar' ? 'تقارير السوق' : 'Market Reports', url: '/resources/market-reports' },
       ],
     },
     {
@@ -33,9 +33,9 @@ export const QuickLinks = () => {
       description: t('quickLinks.news.description'),
       icon: 'fa-bullhorn',
       links: [
-        { name: 'Press Releases', url: '/news/press-releases' },
-        { name: 'Upcoming Events', url: '/news/events' },
-        { name: 'Agricultural Alerts', url: '/news/alerts' },
+        { name: language === 'ar' ? 'البيانات الصحفية' : 'Press Releases', url: '/news/press-releases' },
+        { name: language === 'ar' ? 'الفعاليات القادمة' : 'Upcoming Events', url: '/news/events' },
+        { name: language === 'ar' ? 'التنبيهات الزراعية' : 'Agricultural Alerts', url: '/news/alerts' },
       ],
     },
   ];
