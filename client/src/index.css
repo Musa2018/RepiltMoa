@@ -57,3 +57,12 @@
   direction: ltr;
   text-align: left;
 }
+
+[dir="rtl"] .quick-links {
+  text-align: right;
+}
+
+[dir="rtl"] .quick-link-item {
+  text-align: right;
+  flex-direction: row-reverse;
+}

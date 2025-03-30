@@ -60,7 +60,7 @@ export const QuickLinks = () => {
                           <Link href={link.url}>
                             <a className={`text-primary hover:text-primary-light flex items-center ${isRTL ? 'flex-row-reverse justify-end' : ''}`}>
                               <i className={`fas fa-angle-right ${isRTL ? 'ml-2 transform rotate-180' : 'mr-2'}`}></i>
-                              {language === 'ar' ? quickLink.links[linkIndex].name : link.name}
+                              {link.name} {/*Removed conditional rendering as it was causing the issue*/}
                             </a>
                           </Link>
                         </li>
