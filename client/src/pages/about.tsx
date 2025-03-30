@@ -10,7 +10,7 @@ export default function About() {
   const { language, isRTL } = useLanguage();
   const t = (key: any) => getTranslation(language, key);
   const { section = 'overview' } = useParams();
-  
+
   // Default tab value based on the section parameter
   const defaultTab = 
     section === 'vision' ? 'vision' :
@@ -29,11 +29,11 @@ export default function About() {
       </div>
 
       <Tabs defaultValue={defaultTab} className="w-full" dir={isRTL ? 'rtl' : 'ltr'}>
-        <TabsList className="grid grid-cols-4 mb-8">
-          <TabsTrigger value="overview">{t('nav.about.overview')}</TabsTrigger>
-          <TabsTrigger value="vision">{t('nav.about.vision')}</TabsTrigger>
-          <TabsTrigger value="leadership">{t('nav.about.leadership')}</TabsTrigger>
-          <TabsTrigger value="plan">{t('nav.about.plan')}</TabsTrigger>
+        <TabsList className="grid grid-cols-2 sm:flex sm:flex-row gap-2">
+          <TabsTrigger className="w-full sm:w-auto" value="overview">{t('nav.about.overview')}</TabsTrigger>
+          <TabsTrigger className="w-full sm:w-auto" value="vision">{t('nav.about.vision')}</TabsTrigger>
+          <TabsTrigger className="w-full sm:w-auto" value="leadership">{t('nav.about.leadership')}</TabsTrigger>
+          <TabsTrigger className="w-full sm:w-auto" value="plan">{t('nav.about.plan')}</TabsTrigger>
         </TabsList>
 
         {/* Overview Tab */}
