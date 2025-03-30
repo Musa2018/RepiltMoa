@@ -48,8 +48,8 @@ export const QuickLinks = () => {
             <Card key={index} className="bg-gray-50 hover:shadow-md transition">
               <CardContent className="p-6">
                 <div className={`flex items-start ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <div className={`bg-secondary rounded-full p-3 ${isRTL ? 'ml-4' : 'mr-4'}`}>
-                    <i className={`fas ${quickLink.icon} text-white text-xl`}></i>
+                  <div className={`bg-primary rounded-full p-3 ${isRTL ? 'ml-4' : 'mr-4'}`}>
+                    <i className={`fas ${quickLink.icon.split(' ')[0]} text-white text-xl`}></i>
                   </div>
                   <div className={isRTL ? 'text-right' : ''}>
                     <h3 className="text-xl font-semibold text-primary mb-2">{quickLink.title}</h3>
