@@ -44,3 +44,16 @@
     @apply bg-primary text-white hover:bg-opacity-90 transition-colors;
   }
 }
+:root[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+:root[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+:root[dir="rtl"] .ltr {
+  direction: ltr;
+  text-align: left;
+}
