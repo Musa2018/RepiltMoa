@@ -20,6 +20,10 @@ export const Navbar = () => {
     return location === path;
   };
 
+  const dropdownAlign = isRTL ? 'end' : 'start';
+  const dropdownSide = isRTL ? 'right' : 'left';
+
+
   return (
     <nav className="mt-6">
       <ul className={`flex flex-wrap justify-center md:justify-start ${isRTL ? 'space-x-reverse' : ''} space-x-1 md:space-x-2`}>
@@ -38,7 +42,7 @@ export const Navbar = () => {
                 {t('nav.about')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={isRTL ? 'end' : 'start'} className="w-48">
+            <DropdownMenuContent align={dropdownAlign} side={dropdownSide} sideOffset={8} className="w-48 rtl:text-right">
               <DropdownMenuItem asChild>
                 <Link href="/about/overview">
                   <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -78,7 +82,7 @@ export const Navbar = () => {
                 {t('nav.services')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={isRTL ? 'end' : 'start'} className="w-48">
+            <DropdownMenuContent align={dropdownAlign} side={dropdownSide} sideOffset={8} className="w-48 rtl:text-right">
               <DropdownMenuItem asChild>
                 <Link href="/services/farmer">
                   <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -118,7 +122,7 @@ export const Navbar = () => {
                 {t('nav.resources')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={isRTL ? 'end' : 'start'} className="w-48">
+            <DropdownMenuContent align={dropdownAlign} side={dropdownSide} sideOffset={8} className="w-48 rtl:text-right">
               <DropdownMenuItem asChild>
                 <Link href="/resources/publications">
                   <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
