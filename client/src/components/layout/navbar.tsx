@@ -29,6 +29,19 @@ export const Navbar = () => {
       <ul className={`flex flex-wrap justify-center md:justify-start ${isRTL ? 'space-x-reverse' : ''} space-x-1 md:space-x-2`}>
         <li>
           <Link href="/">
+            <div className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+              <img src="/logo.svg" alt="Ministry Logo" className="h-12 w-12" />
+              <div className={`${isRTL ? 'mr-2' : 'ml-2'}`}>
+                <h1 className="text-xl font-bold text-primary">
+                  {isRTL ? 'وزارة الزراعة الفلسطينية' : 'Palestinian Ministry of Agriculture'}
+                </h1>
+              </div>
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/">
             <a className={`px-3 py-2 rounded-md ${isActive('/') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
               {t('nav.home')}
             </a>
