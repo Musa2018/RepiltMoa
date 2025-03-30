@@ -9,7 +9,7 @@ const translations = {
     "search.placeholder": "Search the website...",
     
     // Submenu Items
-    "submenu.licenses": "Licensing & Permits",
+    "submenu.licenses": "التراخيص الزراعية",
     "submenu.cropGuidance": "Crop Guidance",
     "submenu.supportPrograms": "Support Programs",
     "submenu.publications": "Publications & Research",
@@ -26,7 +26,7 @@ const translations = {
     "nav.services": "Services",
     "nav.services.farmer": "Farmer Support",
     "nav.services.veterinary": "Veterinary Services",
-    "nav.services.licensing": "Licensing",
+    "nav.services.licensing": "التراخيص الزراعية",
     "nav.services.research": "Agricultural Research",
     "nav.resources": "Resources",
     "nav.resources.publications": "Publications",
