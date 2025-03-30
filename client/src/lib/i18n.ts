@@ -8,14 +8,6 @@ const translations = {
     "login": "Login",
     "search.placeholder": "Search the website...",
     
-    // Submenu Items
-    "submenu.licenses": "التراخيص الزراعية",
-    "submenu.cropGuidance": "Crop Guidance",
-    "submenu.supportPrograms": "Support Programs",
-    "submenu.publications": "Publications & Research",
-    "submenu.training": "Training Materials",
-    "submenu.events": "Events Calendar",
-
     // Header/Navigation
     "nav.home": "Home",
     "nav.about": "About",
@@ -26,7 +18,7 @@ const translations = {
     "nav.services": "Services",
     "nav.services.farmer": "Farmer Support",
     "nav.services.veterinary": "Veterinary Services",
-    "nav.services.licensing": "التراخيص الزراعية",
+    "nav.services.licensing": "Licensing",
     "nav.services.research": "Agricultural Research",
     "nav.resources": "Resources",
     "nav.resources.publications": "Publications",
@@ -36,11 +28,11 @@ const translations = {
     "nav.news": "News",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
-
+    
     // Home Page
     "home.hero.btn.farmer": "Farmer Services",
     "home.hero.btn.resources": "Agricultural Resources",
-
+    
     // Quick Links
     "quickLinks.services.title": "Agricultural Services",
     "quickLinks.services.description": "Access licensing, permits, and support programs for farmers.",
@@ -48,7 +40,7 @@ const translations = {
     "quickLinks.resources.description": "Download guides, research, and educational materials.",
     "quickLinks.news.title": "News & Announcements",
     "quickLinks.news.description": "Stay updated with the latest agricultural news and events.",
-
+    
     // News Section
     "news.title": "Latest News & Announcements",
     "news.viewAll": "View All",
@@ -57,7 +49,7 @@ const translations = {
     "news.announcement": "Announcement",
     "news.readMore": "Read More",
     "news.register": "Register",
-
+    
     // Services Directory
     "services.title": "Ministry Services Directory",
     "services.cropPlant": "Crop & Plant Services",
@@ -65,7 +57,7 @@ const translations = {
     "services.livestock": "Livestock & Veterinary Services",
     "services.marketing": "Marketing & Support",
     "services.viewAll": "View All Ministry Services",
-
+    
     // Resources Center
     "resources.title": "Agricultural Resource Center",
     "resources.categories": "Resource Categories",
@@ -73,7 +65,7 @@ const translations = {
     "resources.download": "Download",
     "resources.watch": "Watch",
     "resources.browseAll": "Browse All Resources",
-
+    
     // Directory Section
     "directory.title": "Ministry Directorates & Contacts",
     "directory.directorates": "Directorates",
@@ -83,11 +75,11 @@ const translations = {
     "directory.south": "Southern Governorates",
     "directory.specialist": "Specialized Units",
     "directory.services": "Services",
-
+    
     // Statistics Section
     "stats.title": "Agricultural Sector Statistics",
     "stats.viewDetails": "View Detailed Statistics",
-
+    
     // Footer
     "footer.about": "About the Ministry",
     "footer.aboutText": "The Palestinian Ministry of Agriculture works to develop sustainable agricultural practices, support farmers, and ensure food security throughout Palestine.",
@@ -108,7 +100,7 @@ const translations = {
     "langSwitch": "English",
     "login": "تسجيل الدخول",
     "search.placeholder": "البحث في الموقع...",
-
+    
     // Header/Navigation
     "nav.home": "الرئيسية",
     "nav.about": "عن الوزارة",
@@ -129,30 +121,19 @@ const translations = {
     "nav.news": "الأخبار",
     "nav.projects": "المشاريع",
     "nav.contact": "اتصل بنا",
-
+    
     // Home Page
     "home.hero.btn.farmer": "خدمات المزارعين",
     "home.hero.btn.resources": "الموارد الزراعية",
-
+    
     // Quick Links
     "quickLinks.services.title": "الخدمات الزراعية",
     "quickLinks.services.description": "الوصول إلى التراخيص والتصاريح وبرامج الدعم للمزارعين.",
-    "quickLinks.services.licenses": "Farming Licenses",
-    "quickLinks.services.cropGuidance": "Crop Guidance",
-    "quickLinks.services.supportPrograms": "Support Programs",
-    
-    // Submenu Items
-    "submenu.licenses": "التراخيص الزراعية",
-    "submenu.cropGuidance": "إرشادات زراعية",
-    "submenu.supportPrograms": "برامج الدعم",
-    "submenu.publications": "المنشورات والأبحاث",
-    "submenu.training": "المواد التدريبية",
-    "submenu.events": "التقويم والفعاليات",
     "quickLinks.resources.title": "الموارد والمنشورات",
     "quickLinks.resources.description": "تحميل الأدلة والبحوث والمواد التعليمية.",
     "quickLinks.news.title": "الأخبار والإعلانات",
     "quickLinks.news.description": "ابق على اطلاع بأحدث الأخبار والفعاليات الزراعية.",
-
+    
     // News Section
     "news.title": "أحدث الأخبار والإعلانات",
     "news.viewAll": "عرض الكل",
@@ -161,7 +142,7 @@ const translations = {
     "news.announcement": "إعلان",
     "news.readMore": "قراءة المزيد",
     "news.register": "تسجيل",
-
+    
     // Services Directory
     "services.title": "دليل خدمات الوزارة",
     "services.cropPlant": "خدمات المحاصيل والنباتات",
@@ -169,7 +150,7 @@ const translations = {
     "services.livestock": "خدمات الثروة الحيوانية والبيطرية",
     "services.marketing": "التسويق والدعم",
     "services.viewAll": "عرض جميع خدمات الوزارة",
-
+    
     // Resources Center
     "resources.title": "مركز الموارد الزراعية",
     "resources.categories": "فئات الموارد",
@@ -177,7 +158,7 @@ const translations = {
     "resources.download": "تحميل",
     "resources.watch": "مشاهدة",
     "resources.browseAll": "تصفح جميع الموارد",
-
+    
     // Directory Section
     "directory.title": "مديريات الوزارة والاتصالات",
     "directory.directorates": "المديريات",
@@ -187,11 +168,11 @@ const translations = {
     "directory.south": "المحافظات الجنوبية",
     "directory.specialist": "الوحدات المتخصصة",
     "directory.services": "الخدمات",
-
+    
     // Statistics Section
     "stats.title": "إحصائيات القطاع الزراعي",
     "stats.viewDetails": "عرض الإحصائيات التفصيلية",
-
+    
     // Footer
     "footer.about": "عن الوزارة",
     "footer.aboutText": "تعمل وزارة الزراعة الفلسطينية على تطوير الممارسات الزراعية المستدامة، ودعم المزارعين، وضمان الأمن الغذائي في جميع أنحاء فلسطين.",
