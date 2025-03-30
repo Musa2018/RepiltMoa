@@ -7,6 +7,14 @@ const translations = {
     "langSwitch": "العربية",
     "login": "Login",
     "search.placeholder": "Search the website...",
+    
+    // Submenu Items
+    "submenu.licenses": "Licensing & Permits",
+    "submenu.cropGuidance": "Crop Guidance",
+    "submenu.supportPrograms": "Support Programs",
+    "submenu.publications": "Publications & Research",
+    "submenu.training": "Training Materials",
+    "submenu.events": "Events Calendar",
 
     // Header/Navigation
     "nav.home": "Home",
@@ -132,6 +140,14 @@ const translations = {
     "quickLinks.services.licenses": "تراخيص المزارعين",
     "quickLinks.services.cropGuidance": "الإرشاد الزراعي",
     "quickLinks.services.supportPrograms": "برامج الدعم",
+    
+    // Submenu Items
+    "submenu.licenses": "التراخيص والتصاريح",
+    "submenu.cropGuidance": "إرشادات المحاصيل",
+    "submenu.supportPrograms": "برامج الدعم",
+    "submenu.publications": "المنشورات والأبحاث",
+    "submenu.training": "المواد التدريبية",
+    "submenu.events": "التقويم والفعاليات",
     "quickLinks.resources.title": "الموارد والمنشورات",
     "quickLinks.resources.description": "تحميل الأدلة والبحوث والمواد التعليمية.",
     "quickLinks.news.title": "الأخبار والإعلانات",
