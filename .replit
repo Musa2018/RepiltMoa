@@ -1,21 +1,7 @@
-modules = ["nodejs-20", "web", "postgresql-16"]
-run = "npm run dev"
-hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
-
-[nix]
-channel = "stable-24_05"
-
-[deployment]
-deploymentTarget = "autoscale"
-build = ["npm", "run", "build"]
-run = ["npm", "run", "start"]
-
-[[ports]]
-localPort = 5000
-externalPort = 80
+modules = ["nodejs-20"]
 
 [workflows]
-runButton = "Project"
+runButton = "Dev Server"
 
 [[workflows.workflow]]
 name = "Project"
@@ -40,3 +26,21 @@ task = "packager.installForAll"
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
+
+[[workflows.workflow]]
+name = "Dev Server"
+author = 3619342
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd client && npm run dev"
+
+[[workflows.workflow]]
+name = "Dev Server"
+author = 3619342
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd client && npm run dev"
