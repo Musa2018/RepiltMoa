@@ -6,24 +6,8 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
-  }
-
-  /* RTL Menu Styles */
-  [dir="rtl"] .navigation-menu {
-    @apply flex-row-reverse;
-  }
-
-  [dir="rtl"] .dropdown-menu {
-    @apply right-0 left-auto;
-  }
-
-  [dir="rtl"] .menu-icon {
-    @apply ml-2 mr-0;
-  }
-
-  [dir="rtl"] .nav-item {
-    @apply text-right;
+    @apply font-sans antialiased bg-background text-foreground;
   }
 }
