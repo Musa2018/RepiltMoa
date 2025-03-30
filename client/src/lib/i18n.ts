@@ -6,6 +6,7 @@ const translations = {
     "footer.quickLinks": "Quick Links",
     "footer.services": "Services",
     "footer.contact": "Contact Us",
+    "footer.careers": "الوظائف",
     "footer.rights": "© 2024 Palestinian Ministry of Agriculture. All rights reserved.",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Use",
