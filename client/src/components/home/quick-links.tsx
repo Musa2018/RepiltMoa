@@ -11,7 +11,7 @@ export const QuickLinks = () => {
     {
       title: t('quickLinks.services.title'),
       description: t('quickLinks.services.description'),
-      icon: 'fa-leaf',
+      icon: 'fa-leaf text-primary',
       links: [
         { name: language === 'ar' ? 'التراخيص الزراعية' : 'Farming Licenses', url: '/services/licensing' },
         { name: language === 'ar' ? 'إرشادات المحاصيل' : 'Crop Guidance', url: '/services/crop-guidance' },
