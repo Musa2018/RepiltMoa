@@ -15,7 +15,7 @@ export const Navbar = () => {
   const { language, isRTL } = useLanguage();
   const [location] = useLocation();
   const t = (key: any) => getTranslation(language, key);
-  
+
   const isActive = (path: string) => {
     return location === path;
   };
@@ -30,7 +30,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-        
+
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -70,7 +70,7 @@ export const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-        
+
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -110,7 +110,7 @@ export const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-        
+
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -150,7 +150,7 @@ export const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-        
+
         <li>
           <Link href="/news">
             <a className={`px-3 py-2 rounded-md ${isActive('/news') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
@@ -158,7 +158,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-        
+
         <li>
           <Link href="/projects">
             <a className={`px-3 py-2 rounded-md ${isActive('/projects') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
@@ -166,7 +166,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-        
+
         <li>
           <Link href="/contact">
             <a className={`px-3 py-2 rounded-md ${isActive('/contact') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
