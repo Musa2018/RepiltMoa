@@ -137,9 +137,9 @@ const translations = {
     // Quick Links
     "quickLinks.services.title": "الخدمات الزراعية",
     "quickLinks.services.description": "الوصول إلى التراخيص والتصاريح وبرامج الدعم للمزارعين.",
-    "quickLinks.services.licenses": "التراخيص الزراعية",
-    "quickLinks.services.cropGuidance": "الإرشاد الزراعي",
-    "quickLinks.services.supportPrograms": "برامج الدعم",
+    "quickLinks.services.licenses": "Farming Licenses",
+    "quickLinks.services.cropGuidance": "Crop Guidance",
+    "quickLinks.services.supportPrograms": "Support Programs",
     
     // Submenu Items
     "submenu.licenses": "التراخيص الزراعية",
