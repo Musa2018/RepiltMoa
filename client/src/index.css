@@ -15,12 +15,22 @@
     .navbar-menu {
       @apply text-right;
     }
+    
     .dropdown-menu {
       @apply text-right;
     }
+    
     .menu-icon {
       @apply rotate-180;
     }
+  }
+
+  [dir="rtl"] [role="menu"] {
+    @apply text-right;
+  }
+
+  [dir="rtl"] [role="menuitem"] {
+    @apply text-right pr-2;
   }
 }
 
