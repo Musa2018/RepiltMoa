@@ -134,14 +134,6 @@ const translations = {
     "quickLinks.news.title": "الأخبار والإعلانات",
     "quickLinks.news.description": "ابق على اطلاع بأحدث الأخبار والفعاليات الزراعية.",
     
-    // Quick Links Items
-    "quickLinks.farmingGuides": "الأدلة الزراعية",
-    "quickLinks.researchPapers": "الأوراق البحثية",
-    "quickLinks.marketReports": "تقارير السوق",
-    "quickLinks.pressReleases": "البيانات الصحفية",
-    "quickLinks.upcomingEvents": "الفعاليات القادمة",
-    "quickLinks.agriculturalAlerts": "التنبيهات الزراعية",
-    
     // News Section
     "news.title": "أحدث الأخبار والإعلانات",
     "news.viewAll": "عرض الكل",

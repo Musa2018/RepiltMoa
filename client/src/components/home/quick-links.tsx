@@ -23,9 +23,9 @@ export const QuickLinks = () => {
       description: t('quickLinks.resources.description'),
       icon: 'fa-book',
       links: [
-        { name: language === 'ar' ? t('quickLinks.farmingGuides') : 'Farming Guides', url: '/resources/farming-guides' },
-        { name: language === 'ar' ? t('quickLinks.researchPapers') : 'Research Papers', url: '/resources/research' },
-        { name: language === 'ar' ? t('quickLinks.marketReports') : 'Market Reports', url: '/resources/market-reports' },
+        { name: 'Farming Guides', url: '/resources/farming-guides' },
+        { name: 'Research Papers', url: '/resources/research' },
+        { name: 'Market Reports', url: '/resources/market-reports' },
       ],
     },
     {
@@ -33,9 +33,9 @@ export const QuickLinks = () => {
       description: t('quickLinks.news.description'),
       icon: 'fa-bullhorn',
       links: [
-        { name: language === 'ar' ? t('quickLinks.pressReleases') : 'Press Releases', url: '/news/press-releases' },
-        { name: language === 'ar' ? t('quickLinks.upcomingEvents') : 'Upcoming Events', url: '/news/events' },
-        { name: language === 'ar' ? t('quickLinks.agriculturalAlerts') : 'Agricultural Alerts', url: '/news/alerts' },l: '/news/alerts' },
+        { name: 'Press Releases', url: '/news/press-releases' },
+        { name: 'Upcoming Events', url: '/news/events' },
+        { name: 'Agricultural Alerts', url: '/news/alerts' },
       ],
     },
   ];
