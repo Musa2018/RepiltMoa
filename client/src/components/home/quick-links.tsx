@@ -13,9 +13,9 @@ export const QuickLinks = () => {
       description: t('quickLinks.services.description'),
       icon: 'fa-leaf',
       links: [
-        { name: 'Farming Licenses', url: '/services/licensing' },
-        { name: 'Crop Guidance', url: '/services/crop-guidance' },
-        { name: 'Support Programs', url: '/services/support' },
+        { name: language === 'ar' ? 'التراخيص الزراعية' : 'Farming Licenses', url: '/services/licensing' },
+        { name: language === 'ar' ? 'إرشادات المحاصيل' : 'Crop Guidance', url: '/services/crop-guidance' },
+        { name: language === 'ar' ? 'برامج الدعم' : 'Support Programs', url: '/services/support' },
       ],
     },
     {
