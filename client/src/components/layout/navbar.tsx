@@ -42,33 +42,25 @@ export const Navbar = () => {
                 {t('nav.about')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4 text-primary" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
-              <DropdownMenuItem asChild>
-                <Link href="/about/overview">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.about.overview')}
-                  </a>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48">
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/about/overview" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.about.overview')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/about/vision">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.about.vision')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/about/vision" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.about.vision')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/about/leadership">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.about.leadership')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/about/leadership" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.about.leadership')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/about/plan">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.about.plan')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/about/plan" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.about.plan')}
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -82,33 +74,25 @@ export const Navbar = () => {
                 {t('nav.services')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
-              <DropdownMenuItem asChild>
-                <Link href="/services/farmer">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.farmer')}
-                  </a>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48">
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/services/farmer" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.services.farmer')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/veterinary">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.veterinary')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/services/veterinary" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.services.veterinary')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/licensing">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.licensing')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/services/licensing" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.services.licensing')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/research">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.research')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/services/research" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.services.research')}
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -122,33 +106,25 @@ export const Navbar = () => {
                 {t('nav.resources')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
-              <DropdownMenuItem asChild>
-                <Link href="/resources/publications">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.publications')}
-                  </a>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48">
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/resources/publications" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.resources.publications')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/resources/studies">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.studies')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/resources/studies" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.resources.studies')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/resources/guidelines">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.guidelines')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/resources/guidelines" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.resources.guidelines')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/resources/educational">
-                  <a className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.educational')}
-                  </a>
+              <DropdownMenuItem asChild className="rtl:text-right">
+                <Link href="/resources/educational" className="w-full text-primary hover:text-primary-foreground">
+                  {t('nav.resources.educational')}
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
