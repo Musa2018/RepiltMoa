@@ -11,3 +11,13 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@layer components {
+  .button-light {
+    @apply bg-white text-primary hover:bg-opacity-90 transition-colors;
+  }
+  
+  .button-filled {
+    @apply bg-primary text-white hover:bg-opacity-90 transition-colors;
+  }
+}
