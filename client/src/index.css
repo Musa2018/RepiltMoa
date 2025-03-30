@@ -27,6 +27,7 @@
 
   [dir="rtl"] [role="menu"] {
     @apply text-right;
+    transform-origin: top right;
   }
 
   [dir="rtl"] [role="menuitem"] {
