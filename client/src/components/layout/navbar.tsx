@@ -20,13 +20,13 @@ export const Navbar = () => {
     return location === path;
   };
 
+  // Properly handle RTL alignment
   const dropdownAlign = isRTL ? 'end' : 'start';
-  const dropdownSide = isRTL ? 'right' : 'left';
-
 
   return (
     <nav className="mt-6">
-      <ul className={`flex flex-wrap justify-center md:justify-start ${isRTL ? 'space-x-reverse' : ''} space-x-1 md:space-x-2`}>
+      {/* Fixed space-x direction for RTL support */}
+      <ul className={`flex flex-wrap ${isRTL ? 'flex-row-reverse' : 'flex-row'} justify-center md:justify-${isRTL ? 'end' : 'start'} space-x-1 md:space-x-2 ${isRTL ? 'space-x-reverse' : ''}`}>
         <li>
           <Link href="/" className={`px-3 py-2 rounded-md ${isActive('/') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
             {t('nav.home')}
@@ -36,62 +36,30 @@ export const Navbar = () => {
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center">
-                {t('nav.about')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
+              <Button variant="ghost" className={`px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+                {t('nav.about')} <ChevronDown className={`h-4 w-4 ${isRTL ? 'mr-1' : 'ml-1'}`} />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
-              <DropdownMenuItem asChild>
-                <Link href="/about/overview" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className={`w-48 ${isRTL ? 'text-right' : 'text-left'}`}>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/about/overview" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
                   {t('nav.about.overview')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/about/vision" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/about/vision" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
                   {t('nav.about.vision')}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/about/leadership" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.about.leadership')}
-                  </Link>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/about/leadership" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.about.leadership')}
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/about/plan" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.about.plan')}
-                  </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </li>
-
-        <li>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center">
-                {t('nav.services')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
-              <DropdownMenuItem asChild>
-                <Link href="/services/farmer" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.farmer')}
-                  </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/veterinary" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.veterinary')}
-                  </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/licensing" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.licensing')}
-                  </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/research" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.services.research')}
-                  </Link>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/about/plan" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.about.plan')}
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -100,30 +68,62 @@ export const Navbar = () => {
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center">
-                {t('nav.resources')} <ChevronDown className="ml-1 rtl:mr-1 rtl:ml-0 h-4 w-4" />
+              <Button variant="ghost" className={`px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+                {t('nav.services')} <ChevronDown className={`h-4 w-4 ${isRTL ? 'mr-1' : 'ml-1'}`} />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className="w-48 rtl:text-right">
-              <DropdownMenuItem asChild>
-                <Link href="/resources/publications" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.publications')}
-                  </Link>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className={`w-48 ${isRTL ? 'text-right' : 'text-left'}`}>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/services/farmer" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.services.farmer')}
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/resources/studies" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.studies')}
-                  </Link>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/services/veterinary" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.services.veterinary')}
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/resources/guidelines" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.guidelines')}
-                  </Link>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/services/licensing" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.services.licensing')}
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/resources/educational" className="w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    {t('nav.resources.educational')}
-                  </Link>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/services/research" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.services.research')}
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </li>
+
+        <li>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className={`px-3 py-2 rounded-md text-primary hover:bg-gray-100 transition flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+                {t('nav.resources')} <ChevronDown className={`h-4 w-4 ${isRTL ? 'mr-1' : 'ml-1'}`} />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className={`w-48 ${isRTL ? 'text-right' : 'text-left'}`}>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/resources/publications" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.resources.publications')}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/resources/studies" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.resources.studies')}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/resources/guidelines" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.resources.guidelines')}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem rtl={isRTL} asChild>
+                <Link href="/resources/educational" className={`w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
+                  {t('nav.resources.educational')}
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
