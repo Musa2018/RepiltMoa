@@ -16,7 +16,7 @@ export const ResourceCenter = () => {
 
   // Get unique categories for the sidebar
   const categories = resources 
-    ? [...new Set(resources.map(resource => resource.category))]
+    ? Array.from(new Set(resources.map(resource => resource.category)))
     : [];
 
   // Count resources by category
@@ -27,7 +27,7 @@ export const ResourceCenter = () => {
 
   // Get unique file types
   const fileTypes = resources 
-    ? [...new Set(resources.map(resource => resource.fileType))]
+    ? Array.from(new Set(resources.map(resource => resource.fileType)))
     : [];
 
   const getFileIcon = (fileType: string) => {
@@ -90,10 +90,8 @@ export const ResourceCenter = () => {
                     </p>
                     <div className={`flex justify-between items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
                       <span className="text-xs text-gray-500">{resource.fileType} • {resource.fileSize}</span>
-                      <Link href={resource.fileUrl}>
-                        <a className="text-primary hover:text-primary-light font-semibold text-sm">
-                          {getActionText(resource.fileType)}
-                        </a>
+                      <Link href={resource.fileUrl} className="text-primary hover:text-primary-light font-semibold text-sm">
+                        {getActionText(resource.fileType)}
                       </Link>
                     </div>
                   </div>
@@ -117,13 +115,11 @@ export const ResourceCenter = () => {
               ) : (
                 categories.map((category) => (
                   <li key={category}>
-                    <Link href={`/resources/category/${encodeURIComponent(category)}`}>
-                      <a className={`flex items-center justify-between p-2 rounded hover:bg-gray-100 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                        {category}
-                        <span className="bg-gray-200 text-gray-700 rounded-full px-2 py-1 text-xs">
-                          {categoryCount[category]}
-                        </span>
-                      </a>
+                    <Link href={`/resources/category/${encodeURIComponent(category)}`} className={`flex items-center justify-between p-2 rounded hover:bg-gray-100 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                      {category}
+                      <span className="bg-gray-200 text-gray-700 rounded-full px-2 py-1 text-xs">
+                        {categoryCount[category]}
+                      </span>
                     </Link>
                   </li>
                 ))
@@ -141,10 +137,8 @@ export const ResourceCenter = () => {
                   ))
                 ) : (
                   fileTypes.map((fileType) => (
-                    <Link key={fileType} href={`/resources/type/${encodeURIComponent(fileType)}`}>
-                      <a className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm">
-                        {fileType}
-                      </a>
+                    <Link key={fileType} href={`/resources/type/${encodeURIComponent(fileType)}`} className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm">
+                      {fileType}
                     </Link>
                   ))
                 )}

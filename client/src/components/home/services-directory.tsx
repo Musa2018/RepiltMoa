@@ -79,15 +79,13 @@ export const ServicesDirectory = () => {
                     <ul className="bg-gray-50 rounded-lg p-4 space-y-3">
                       {categoryServices.map((service) => (
                         <li key={service.id}>
-                          <Link href={`/services/${service.id}`}>
-                            <a className="block p-3 rounded hover:bg-gray-100 transition">
-                              <div className={`font-semibold text-primary ${isRTL ? 'text-right' : ''}`}>
-                                {language === 'ar' ? service.titleAr : service.titleEn}
-                              </div>
-                              <p className={`text-sm text-gray-600 ${isRTL ? 'text-right' : ''}`}>
-                                {language === 'ar' ? service.descriptionAr : service.descriptionEn}
-                              </p>
-                            </a>
+                          <Link href={`/services/${service.id}`} className="block p-3 rounded hover:bg-gray-100 transition">
+                            <div className={`font-semibold text-primary ${isRTL ? 'text-right' : ''}`}>
+                              {language === 'ar' ? service.titleAr : service.titleEn}
+                            </div>
+                            <p className={`text-sm text-gray-600 ${isRTL ? 'text-right' : ''}`}>
+                              {language === 'ar' ? service.descriptionAr : service.descriptionEn}
+                            </p>
                           </Link>
                         </li>
                       ))}
