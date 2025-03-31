@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/language-context';
 import { getTranslation } from '@/lib/i18n';
 import { motion } from 'framer-motion';
-import palestineEmblem from '@/assets/palestine_emblem.png';
 
 interface LanguageToggleProps {
   className?: string;
@@ -63,35 +62,17 @@ export function LanguageToggle({ className = '' }: LanguageToggleProps) {
       aria-label="Switch language"
       disabled={isAnimating}
     >
-      <div className="relative h-6 w-9 overflow-hidden rounded-sm border border-gray-200 shadow-sm bg-white">
-        {language === 'en' ? (
-          <motion.div 
-            className="absolute inset-0"
-            initial={false}
-            animate={{ 
-              rotateY: isAnimating ? 90 : 0,
-              opacity: isAnimating ? 0 : 1 
-            }}
-            transition={{ duration: 0.3 }}
-            dangerouslySetInnerHTML={{ __html: ukFlag }}
-          />
-        ) : (
-          <motion.div 
-            className="absolute inset-0 flex items-center justify-center"
-            initial={false}
-            animate={{ 
-              rotateY: isAnimating ? 90 : 0,
-              opacity: isAnimating ? 0 : 1 
-            }}
-            transition={{ duration: 0.3 }}
-          >
-            <img 
-              src={palestineEmblem} 
-              alt="Palestine Emblem" 
-              className="h-5 w-auto object-contain max-w-full"
-            />
-          </motion.div>
-        )}
+      <div className="relative h-6 w-9 overflow-hidden rounded-sm border border-gray-200 shadow-sm">
+        <motion.div 
+          className="absolute inset-0"
+          initial={false}
+          animate={{ 
+            rotateY: isAnimating ? 90 : 0,
+            opacity: isAnimating ? 0 : 1 
+          }}
+          transition={{ duration: 0.3 }}
+          dangerouslySetInnerHTML={{ __html: language === 'en' ? ukFlag : palestineFlag }}
+        />
       </div>
       <motion.span 
         className="text-sm font-medium"
