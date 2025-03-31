@@ -4,6 +4,7 @@ import { useLanguage } from '@/context/language-context';
 import { getTranslation } from '@/lib/i18n';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { LanguageToggle } from '@/components/ui/language-toggle';
 import { Navbar } from './navbar';
 
 export const Header = () => {
@@ -19,14 +20,7 @@ export const Header = () => {
             <span className="text-sm hidden md:inline">{isRTL ? 'الموقع الرسمي لوزارة الزراعة الفلسطينية' : 'Official Website of the Palestinian Ministry of Agriculture'}</span>
           </div>
           <div className="flex items-center space-x-4 rtl:space-x-reverse">
-            <button
-              onClick={toggleLanguage}
-              className="text-sm flex items-center"
-              aria-label="Switch language"
-            >
-              <i className="fas fa-globe mr-1 rtl:ml-1 rtl:mr-0"></i>
-              <span>{t('langSwitch')}</span>
-            </button>
+            <LanguageToggle className="text-white hover:text-accent-light transition" />
             <Link href="/login" className="text-sm hover:text-accent-light transition">
               <i className="fas fa-sign-in-alt mr-1 rtl:ml-1 rtl:mr-0"></i> {t('login')}
             </Link>
