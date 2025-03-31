@@ -27,10 +27,8 @@ export const Header = () => {
               <i className="fas fa-globe mr-1 rtl:ml-1 rtl:mr-0"></i>
               <span>{t('langSwitch')}</span>
             </button>
-            <Link href="/login">
-              <a className="text-sm hover:text-accent-light transition">
-                <i className="fas fa-sign-in-alt mr-1 rtl:ml-1 rtl:mr-0"></i> {t('login')}
-              </a>
+            <Link href="/login" className="text-sm hover:text-accent-light transition">
+              <i className="fas fa-sign-in-alt mr-1 rtl:ml-1 rtl:mr-0"></i> {t('login')}
             </Link>
           </div>
         </div>

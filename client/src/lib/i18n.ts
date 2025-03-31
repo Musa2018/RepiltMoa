@@ -10,6 +10,7 @@ const translations = {
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Use",
     "footer.accessibility": "Accessibility",
+    "footer.sitemap": "Sitemap",
 
     // Common
     "site.name": "Palestinian Ministry of Agriculture",
@@ -39,7 +40,10 @@ const translations = {
     "nav.news": "News",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
-    
+    "nav.careers": "Careers", 
+    "nav.services.plantProtection": "Plant Protection",
+    "nav.services.exportCertification": "Export Certification",
+    "nav.services.trainingWorkshops":"Training & Workshops",
     // Home Page
     "home.hero.btn.farmer": "Farmer Services",
     "home.hero.btn.resources": "Agricultural Resources",
@@ -91,17 +95,7 @@ const translations = {
     "stats.title": "Agricultural Sector Statistics",
     "stats.viewDetails": "View Detailed Statistics",
     
-    // Footer
-    "footer.about": "About the Ministry",
-    "footer.aboutText": "The Palestinian Ministry of Agriculture works to develop sustainable agricultural practices, support farmers, and ensure food security throughout Palestine.",
-    "footer.quickLinks": "Quick Links",
-    "footer.services": "Services",
-    "footer.contact": "Contact Us",
-    "footer.rights": "© 2025 Palestinian Ministry of Agriculture. All rights reserved.",
-    "footer.privacy": "Privacy Policy",
-    "footer.terms": "Terms of Use",
-    "footer.accessibility": "Accessibility",
-    "footer.sitemap": "Sitemap"
+    
   },
   ar: {
     // Common
@@ -131,8 +125,11 @@ const translations = {
     "nav.resources.educational": "المواد التعليمية",
     "nav.news": "الأخبار",
     "nav.projects": "المشاريع",
+    "nav.careers": "الوظائف",
     "nav.contact": "اتصل بنا",
-    
+    "nav.services.plantProtection": "وقاية النبات",
+    "nav.services.exportCertification": "شهادات التصدير",
+    "nav.services.trainingWorkshops":"التدريب و ورشات العمل",
     // Home Page
     "home.hero.btn.farmer": "خدمات المزارعين",
     "home.hero.btn.resources": "الموارد الزراعية",
