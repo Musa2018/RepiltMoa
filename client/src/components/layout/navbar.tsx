@@ -24,9 +24,9 @@ export const Navbar = () => {
   const dropdownAlign = isRTL ? 'end' : 'start';
 
   return (
-    <nav className="mt-6">
+    <nav className="mt-2">
       {/* Fixed space-x direction for RTL support */}
-      <ul className={`flex flex-wrap ${isRTL ? 'flex-row-reverse' : 'flex-row'} justify-center md:justify-${isRTL ? 'end' : 'start'} space-x-2 md:space-x-4 ${isRTL ? 'space-x-reverse' : ''}`}>
+      <ul className={`flex items-center ${isRTL ? 'flex-row-reverse' : 'flex-row'} justify-center md:justify-${isRTL ? 'end' : 'start'} space-x-6 md:space-x-8 ${isRTL ? 'space-x-reverse' : ''}`}>
         <li>
           <Link 
             href="/" 
@@ -43,14 +43,14 @@ export const Navbar = () => {
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button 
-                variant="ghost" 
+              <Link
+                href="#"
                 className={`px-4 py-2.5 text-base font-medium rounded-md text-primary hover:bg-gray-100 transition flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}
               >
                 {t('nav.about')} <ChevronDown className={`h-4 w-4 ${isRTL ? 'mr-1.5' : 'ml-1.5'}`} />
-              </Button>
+              </Link>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className={`w-56 ${isRTL ? 'text-right' : 'text-left'}`}>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={5} className={`w-56 mt-0 ${isRTL ? 'text-right' : 'text-left'}`}>
               <DropdownMenuItem rtl={isRTL} asChild>
                 <Link href="/about/overview" className={`w-full px-4 py-2.5 text-base text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
                   {t('nav.about.overview')}
@@ -78,14 +78,14 @@ export const Navbar = () => {
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button 
-                variant="ghost" 
+              <Link
+                href="#"
                 className={`px-4 py-2.5 text-base font-medium rounded-md text-primary hover:bg-gray-100 transition flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}
               >
                 {t('nav.services')} <ChevronDown className={`h-4 w-4 ${isRTL ? 'mr-1.5' : 'ml-1.5'}`} />
-              </Button>
+              </Link>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className={`w-56 ${isRTL ? 'text-right' : 'text-left'}`}>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={5} className={`w-56 mt-0 ${isRTL ? 'text-right' : 'text-left'}`}>
               <DropdownMenuItem rtl={isRTL} asChild>
                 <Link href="/services/farmer" className={`w-full px-4 py-2.5 text-base text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
                   {t('nav.services.farmer')}
@@ -113,14 +113,14 @@ export const Navbar = () => {
         <li>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button 
-                variant="ghost" 
+              <Link
+                href="#"
                 className={`px-4 py-2.5 text-base font-medium rounded-md text-primary hover:bg-gray-100 transition flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}
               >
                 {t('nav.resources')} <ChevronDown className={`h-4 w-4 ${isRTL ? 'mr-1.5' : 'ml-1.5'}`} />
-              </Button>
+              </Link>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={8} className={`w-56 ${isRTL ? 'text-right' : 'text-left'}`}>
+            <DropdownMenuContent align={dropdownAlign} side="bottom" sideOffset={5} className={`w-56 mt-0 ${isRTL ? 'text-right' : 'text-left'}`}>
               <DropdownMenuItem rtl={isRTL} asChild>
                 <Link href="/resources/publications" className={`w-full px-4 py-2.5 text-base text-gray-700 hover:bg-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}>
                   {t('nav.resources.publications')}
