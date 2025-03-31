@@ -35,39 +35,53 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white">
+                <Link href="/about">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.about')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white">
+                <Link href="/services">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/news" className="text-gray-300 hover:text-white">
+                <Link href="/news">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.news')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/resources" className="text-gray-300 hover:text-white">
+                <Link href="/resources">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.resources')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-gray-300 hover:text-white">
+                <Link href="/projects">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.projects')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-gray-300 hover:text-white">
+                <Link href="/careers">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.careers')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white">
+                <Link href="/contact">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.contact')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,39 +91,53 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.services')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/farmer" className="text-gray-300 hover:text-white">
+                <Link href="/services/farmer">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.farmer')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services/licensing" className="text-gray-300 hover:text-white">
+                <Link href="/services/licensing">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.licensing')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services/veterinary" className="text-gray-300 hover:text-white">
+                <Link href="/services/veterinary">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.veterinary')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services/plant-protection" className="text-gray-300 hover:text-white">
+                <Link href="/services/plant-protection">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.plantProtection')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services/export" className="text-gray-300 hover:text-white">
+                <Link href="/services/export">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.exportCertification')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services/research" className="text-gray-300 hover:text-white">
+                <Link href="/services/research">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.research')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link href="/services/training" className="text-gray-300 hover:text-white">
+                <Link href="/services/training">
+                  <a className="text-gray-300 hover:text-white">
                     {t('nav.services.trainingWorkshops')}
-                  </Link>
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -151,18 +179,26 @@ export const Footer = () => {
               <p className="text-sm text-gray-400">{t('footer.rights')}</p>
             </div>
             <div className={`flex ${isRTL ? 'space-x-reverse' : ''} space-x-6`}>
-              <Link href="/privacy" className="text-sm text-gray-400 hover:text-white">
+              <Link href="/privacy">
+                <a className="text-sm text-gray-400 hover:text-white">
                   {t('footer.privacy')}
-                </Link>
-              <Link href="/terms" className="text-sm text-gray-400 hover:text-white">
+                </a>
+              </Link>
+              <Link href="/terms">
+                <a className="text-sm text-gray-400 hover:text-white">
                   {t('footer.terms')}
-                </Link>
-              <Link href="/accessibility" className="text-sm text-gray-400 hover:text-white">
+                </a>
+              </Link>
+              <Link href="/accessibility">
+                <a className="text-sm text-gray-400 hover:text-white">
                   {t('footer.accessibility')}
-                </Link>
-              <Link href="/sitemap" className="text-sm text-gray-400 hover:text-white">
+                </a>
+              </Link>
+              <Link href="/sitemap">
+                <a className="text-sm text-gray-400 hover:text-white">
                   {t('footer.sitemap')}
-                </Link>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
