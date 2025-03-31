@@ -55,11 +55,9 @@ export const NewsSection = () => {
       <div className="container mx-auto px-6">
         <div className={`flex justify-between items-center mb-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
           <h2 className="text-2xl font-bold text-primary">{t('news.title')}</h2>
-          <Link href="/news">
-            <a className={`text-accent hover:text-accent-light font-semibold flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
-              {t('news.viewAll')} 
-              <i className={`fas fa-arrow-right ${isRTL ? 'mr-2 transform rotate-180' : 'ml-2'}`}></i>
-            </a>
+          <Link href="/news" className={`text-accent hover:text-accent-light font-semibold flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+            {t('news.viewAll')} 
+            <i className={`fas fa-arrow-right ${isRTL ? 'mr-2 transform rotate-180' : 'ml-2'}`}></i>
           </Link>
         </div>
 
@@ -97,10 +95,8 @@ export const NewsSection = () => {
                     <span className="text-sm text-gray-500">
                       <i className="far fa-calendar mr-1"></i> {formatDate(news.publishDate)}
                     </span>
-                    <Link href={`/news/${news.id}`}>
-                      <a className="text-primary hover:text-primary-light font-semibold">
-                        {news.category === 'Event' ? t('news.register') : t('news.readMore')}
-                      </a>
+                    <Link href={`/news/${news.id}`} className="text-primary hover:text-primary-light font-semibold">
+                      {news.category === 'Event' ? t('news.register') : t('news.readMore')}
                     </Link>
                   </div>
                 </CardContent>
