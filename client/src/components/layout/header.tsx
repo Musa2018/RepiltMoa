@@ -27,15 +27,13 @@ export const Header = () => {
               <i className="fas fa-globe mr-1 rtl:ml-1 rtl:mr-0"></i>
               <span>{t('langSwitch')}</span>
             </button>
-            <Link href="/login">
-              <a className="text-sm hover:text-accent-light transition">
-                <i className="fas fa-sign-in-alt mr-1 rtl:ml-1 rtl:mr-0"></i> {t('login')}
-              </a>
+            <Link href="/login" className="text-sm hover:text-accent-light transition flex items-center">
+              <i className="fas fa-sign-in-alt mr-1 rtl:ml-1 rtl:mr-0"></i> {t('login')}
             </Link>
           </div>
         </div>
       </div>
-      
+
       {/* Main navigation */}
       <div className="container mx-auto px-6 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -55,7 +53,7 @@ export const Header = () => {
               </h2>
             </div>
           </div>
-          
+
           <div className="w-full md:w-auto">
             <div className="relative">
               <Input 
@@ -67,7 +65,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        
+
         <Navbar />
       </div>
     </header>
