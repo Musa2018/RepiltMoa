@@ -38,16 +38,14 @@ export const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
-            <img 
-              src={new URL('/palestine-logo.png', import.meta.url).href}
-              alt="State of Palestine Logo"
-              className="h-16 w-16 mr-4 rtl:ml-4 rtl:mr-0"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.onerror = null;
-                target.src = 'https://upload.wikimedia.org/wikipedia/commons/0/00/Emblem_of_Palestine.svg';
-              }}
-            />
+            <svg 
+              className="h-16 w-16 mr-4 rtl:ml-4 rtl:mr-0 text-primary" 
+              viewBox="0 0 100 100" 
+              fill="currentColor"
+            >
+              <path d="M50,10 C70,10 85,25 85,50 C85,75 70,90 50,90 C30,90 15,75 15,50 C15,25 30,10 50,10 Z M50,20 C35,20 25,35 25,50 C25,65 35,80 50,80 C65,80 75,65 75,50 C75,35 65,20 50,20 Z M40,40 L60,40 L60,60 L40,60 Z" />
+              <path d="M50,0 L50,100 M0,50 L100,50" strokeWidth="5" stroke="currentColor" fill="none" />
+            </svg>
             <div className={isRTL ? 'text-right' : ''}>
               <h1 className="text-xl font-bold text-primary">{t('site.name')}</h1>
               <h2 className={`text-sm text-gray-600 ${isRTL ? 'lang-ar' : 'lang-en'}`}>
