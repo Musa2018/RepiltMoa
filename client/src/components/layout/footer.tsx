@@ -15,7 +15,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.about')}</h3>
             <p className="text-gray-300 text-sm mb-4">{t('footer.aboutText')}</p>
             <div className={`flex ${isRTL ? 'space-x-reverse justify-end' : ''} space-x-4`}>
-              <a href="#" className="text-gray-300 hover:text-white" aria-label="Facebook">
+              <a href="https://www.facebook.com/Palestinian.Ministry.of.Agriculture" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a href="#" className="text-gray-300 hover:text-white" aria-label="Twitter">

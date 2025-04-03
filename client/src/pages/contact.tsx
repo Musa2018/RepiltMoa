@@ -327,7 +327,7 @@ export default function Contact() {
                 {language === 'ar' ? 'تابعنا على' : 'Follow Us On'}
               </h3>
               <div className="flex space-x-4 rtl:space-x-reverse">
-                <a href="#" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition">
+                <a href="https://www.facebook.com/Palestinian.Ministry.of.Agriculture" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition">
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#" className="bg-sky-500 text-white p-3 rounded-full hover:bg-sky-600 transition">
