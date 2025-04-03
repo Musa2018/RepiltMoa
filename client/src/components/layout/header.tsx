@@ -42,6 +42,11 @@ export const Header = () => {
               src="/palestine-logo.png"
               alt="State of Palestine Logo"
               className="h-16 w-16 mr-4 rtl:ml-4 rtl:mr-0"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.onerror = null;
+                target.src = 'https://upload.wikimedia.org/wikipedia/commons/0/00/Emblem_of_Palestine.svg';
+              }}
             />
             <div className={isRTL ? 'text-right' : ''}>
               <h1 className="text-xl font-bold text-primary">{t('site.name')}</h1>
