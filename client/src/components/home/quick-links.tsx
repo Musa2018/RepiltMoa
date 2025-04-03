@@ -57,11 +57,12 @@ export const QuickLinks = () => {
                     <ul className="space-y-2">
                       {quickLink.links.map((link, linkIndex) => (
                         <li key={linkIndex}>
-                          <Link href={link.url}>
-                            <a className={`text-primary hover:text-primary-light flex items-center ${isRTL ? 'flex-row-reverse justify-end' : ''}`}>
-                              <i className={`fas fa-angle-right ${isRTL ? 'ml-2 transform rotate-180' : 'mr-2'}`}></i>
-                              {language === 'ar' ? quickLink.links[linkIndex].name : link.name}
-                            </a>
+                          <Link 
+                            href={link.url}
+                            className={`text-primary hover:text-primary-light flex items-center ${isRTL ? 'flex-row-reverse justify-end' : ''}`}
+                          >
+                            <i className={`fas fa-angle-right ${isRTL ? 'ml-2 transform rotate-180' : 'mr-2'}`}></i>
+                            {language === 'ar' ? quickLink.links[linkIndex].name : link.name}
                           </Link>
                         </li>
                       ))}
