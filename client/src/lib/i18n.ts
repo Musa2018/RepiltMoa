@@ -33,6 +33,11 @@ const translations = {
     "nav.careers": "Careers",
     "nav.contact": "Contact",
     
+    // Contact/Footer
+    "contact.address.ministry": "Ministry of Agriculture",
+    "contact.address.city": "Al-Bireh, Ramallah",
+    "contact.address.country": "Palestine",
+    
     // Home Page
     "home.hero.btn.farmer": "Farmer Services",
     "home.hero.btn.resources": "Agricultural Resources",
@@ -129,6 +134,11 @@ const translations = {
     "nav.projects": "المشاريع",
     "nav.careers": "الوظائف",
     "nav.contact": "اتصل بنا",
+    
+    // Contact/Footer
+    "contact.address.ministry": "وزارة الزراعة",
+    "contact.address.city": "البيرة، رام الله",
+    "contact.address.country": "فلسطين",
     
     // Home Page
     "home.hero.btn.farmer": "خدمات المزارعين",

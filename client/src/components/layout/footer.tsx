@@ -149,9 +149,9 @@ export const Footer = () => {
               <li className={`flex ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <i className={`fas fa-map-marker-alt mt-1 ${isRTL ? 'mr-0 ml-3' : 'mr-3'} text-accent`}></i>
                 <span className="text-gray-300">
-                  Ministry of Agriculture<br/>
-                  Al-Bireh, Ramallah<br/>
-                  Palestine
+                  {t('contact.address.ministry')}<br/>
+                  {t('contact.address.city')}<br/>
+                  {t('contact.address.country')}
                 </span>
               </li>
               <li className={`flex ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
