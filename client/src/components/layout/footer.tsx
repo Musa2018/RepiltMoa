@@ -121,7 +121,7 @@ export const Footer = () => {
               <li>
                 <Link href="/services/export">
                   <a className="text-gray-300 hover:text-white">
-                    Export Certification
+                    {t('nav.services.exportCert')}
                   </a>
                 </Link>
               </li>
