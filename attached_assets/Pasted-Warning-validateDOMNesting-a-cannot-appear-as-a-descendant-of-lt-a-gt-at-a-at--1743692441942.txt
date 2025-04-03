@@ -1,0 +1,35 @@
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at a
+    at https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=cd5e0aa0:337:18
+    at li
+    at ul
+    at nav
+    at Navbar (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/components/layout/navbar.tsx:31:31)
+    at div
+    at header
+    at Header (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/components/layout/header.tsx:25:47)
+    at div
+    at QueryClientProvider (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=cd5e0aa0:2805:3)
+    at App
+    at LanguageProvider (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/context/language-context.tsx:20:36)
+    at ThemeProvider (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/components/ui/theme-provider.tsx:25:3)
+at a
+at a
+at https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=cd5e0aa0:337:18
+at li
+at ul
+at nav
+at Navbar (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/components/layout/navbar.tsx:31:31)
+at div
+at header
+at Header (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/components/layout/header.tsx:25:47)
+at div
+at QueryClientProvider (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=cd5e0aa0:2805:3)
+at App
+at LanguageProvider (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/context/language-context.tsx:20:36)
+at ThemeProvider (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/src/components/ui/theme-provider.tsx:25:3)
+at t.value (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://251e8faf-75e6-4c69-886a-606ae0ab941b-00-3j4o9m3cc2s00.pike.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
