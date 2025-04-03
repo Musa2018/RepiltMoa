@@ -15,7 +15,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.about')}</h3>
             <p className="text-gray-300 text-sm mb-4">{t('footer.aboutText')}</p>
             <div className={`flex ${isRTL ? 'space-x-reverse justify-end' : ''} space-x-4`}>
-              <a href="#" className="text-gray-300 hover:text-white" aria-label="Facebook">
+              <a href="https://www.facebook.com/Palestinian.Ministry.of.Agriculture" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a href="#" className="text-gray-300 hover:text-white" aria-label="Twitter">
@@ -35,52 +35,38 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.about')}
-                  </a>
+                <Link href="/about" className="text-gray-300 hover:text-white">
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/services">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services')}
-                  </a>
+                <Link href="/services" className="text-gray-300 hover:text-white">
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
-                <Link href="/news">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.news')}
-                  </a>
+                <Link href="/news" className="text-gray-300 hover:text-white">
+                  {t('nav.news')}
                 </Link>
               </li>
               <li>
-                <Link href="/resources">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.resources')}
-                  </a>
+                <Link href="/resources" className="text-gray-300 hover:text-white">
+                  {t('nav.resources')}
                 </Link>
               </li>
               <li>
-                <Link href="/projects">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.projects')}
-                  </a>
+                <Link href="/projects" className="text-gray-300 hover:text-white">
+                  {t('nav.projects')}
                 </Link>
               </li>
               <li>
-                <Link href="/careers">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.careers')}
-                  </a>
+                <Link href="/careers" className="text-gray-300 hover:text-white">
+                  {t('nav.careers')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.contact')}
-                  </a>
+                <Link href="/contact" className="text-gray-300 hover:text-white">
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -91,52 +77,38 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.services')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/farmer">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.farmer')}
-                  </a>
+                <Link href="/services/farmer" className="text-gray-300 hover:text-white">
+                  {t('nav.services.farmer')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/licensing">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.licensing')}
-                  </a>
+                <Link href="/services/licensing" className="text-gray-300 hover:text-white">
+                  {t('nav.services.licensing')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/veterinary">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.veterinary')}
-                  </a>
+                <Link href="/services/veterinary" className="text-gray-300 hover:text-white">
+                  {t('nav.services.veterinary')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/plant-protection">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.plantProtection')}
-                  </a>
+                <Link href="/services/plant-protection" className="text-gray-300 hover:text-white">
+                  {t('nav.services.plantProtection')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/export">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.exportCert')}
-                  </a>
+                <Link href="/services/export" className="text-gray-300 hover:text-white">
+                  {t('nav.services.exportCert')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/research">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.research')}
-                  </a>
+                <Link href="/services/research" className="text-gray-300 hover:text-white">
+                  {t('nav.services.research')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/training">
-                  <a className="text-gray-300 hover:text-white">
-                    {t('nav.services.training')}
-                  </a>
+                <Link href="/services/training" className="text-gray-300 hover:text-white">
+                  {t('nav.services.training')}
                 </Link>
               </li>
             </ul>
@@ -179,25 +151,17 @@ export const Footer = () => {
               <p className="text-sm text-gray-400">{t('footer.rights')}</p>
             </div>
             <div className={`flex ${isRTL ? 'space-x-reverse' : ''} space-x-6`}>
-              <Link href="/privacy">
-                <a className="text-sm text-gray-400 hover:text-white">
-                  {t('footer.privacy')}
-                </a>
+              <Link href="/privacy" className="text-sm text-gray-400 hover:text-white">
+                {t('footer.privacy')}
               </Link>
-              <Link href="/terms">
-                <a className="text-sm text-gray-400 hover:text-white">
-                  {t('footer.terms')}
-                </a>
+              <Link href="/terms" className="text-sm text-gray-400 hover:text-white">
+                {t('footer.terms')}
               </Link>
-              <Link href="/accessibility">
-                <a className="text-sm text-gray-400 hover:text-white">
-                  {t('footer.accessibility')}
-                </a>
+              <Link href="/accessibility" className="text-sm text-gray-400 hover:text-white">
+                {t('footer.accessibility')}
               </Link>
-              <Link href="/sitemap">
-                <a className="text-sm text-gray-400 hover:text-white">
-                  {t('footer.sitemap')}
-                </a>
+              <Link href="/sitemap" className="text-sm text-gray-400 hover:text-white">
+                {t('footer.sitemap')}
               </Link>
             </div>
           </div>
