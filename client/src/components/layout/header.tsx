@@ -39,8 +39,10 @@ export const Header = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
             <img 
-              src={new URL('/palestine-logo.png', import.meta.url).href}
+              src="/palestine-logo.png"
               alt="State of Palestine Logo"
+              width={64}
+              height={64}
               className="h-16 w-16 mr-4 rtl:ml-4 rtl:mr-0"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
