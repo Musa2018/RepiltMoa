@@ -26,7 +26,7 @@ export const Navbar = () => {
 
   return (
     <nav className="mt-6">
-      <ul className={`flex flex-wrap justify-center md:justify-start ${isRTL ? 'space-x-reverse' : ''} space-x-2`}>
+      <ul className={`flex flex-wrap items-center justify-center md:justify-start gap-2 ${isRTL ? 'space-x-reverse' : ''}`}>
         <li>
           <Link href="/">
             <a className={`px-3 py-2 rounded-md ${isActive('/') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>

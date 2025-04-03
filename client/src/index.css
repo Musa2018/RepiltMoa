@@ -30,6 +30,16 @@
     transform-origin: top right;
   }
 
+[dir="rtl"] .flex {
+  gap: 0.5rem;
+}
+
+[dir="rtl"] .flex.space-x-reverse > * + * {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+
   [dir="rtl"] [role="menuitem"] {
     @apply text-right pr-2;
   }
