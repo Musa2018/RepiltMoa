@@ -9,7 +9,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 export const ResourceCenter = () => {
   const { language, isRTL } = useLanguage();
   const t = (key: any) => getTranslation(language, key);
-  
+
   const { data: resources, isLoading } = useQuery<Resource[]>({
     queryKey: ['/api/resources'],
   });
@@ -60,7 +60,7 @@ export const ResourceCenter = () => {
         <h2 className={`text-2xl font-bold text-primary mb-8 ${isRTL ? 'text-right' : ''}`}>
           {t('resources.title')}
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="md:col-span-3">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -90,10 +90,11 @@ export const ResourceCenter = () => {
                     </p>
                     <div className={`flex justify-between items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
                       <span className="text-xs text-gray-500">{resource.fileType} • {resource.fileSize}</span>
-                      <Link href={resource.fileUrl}>
-                        <a className="text-primary hover:text-primary-light font-semibold text-sm">
-                          {getActionText(resource.fileType)}
-                        </a>
+                      <Link 
+                        href={resource.fileUrl}
+                        className="text-primary hover:text-primary-light font-semibold text-sm"
+                      >
+                        {getActionText(resource.fileType)}
                       </Link>
                     </div>
                   </div>
@@ -101,7 +102,7 @@ export const ResourceCenter = () => {
               )}
             </div>
           </div>
-          
+
           {/* Resource categories sidebar */}
           <div className="bg-white rounded-lg shadow-sm p-6">
             <h3 className={`font-semibold text-lg mb-4 pb-2 border-b ${isRTL ? 'text-right' : ''}`}>
@@ -129,7 +130,7 @@ export const ResourceCenter = () => {
                 ))
               )}
             </ul>
-            
+
             <div className="mt-6 pt-4 border-t">
               <h4 className={`font-medium mb-3 ${isRTL ? 'text-right' : ''}`}>
                 {t('resources.formats')}
@@ -152,7 +153,7 @@ export const ResourceCenter = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="mt-8 text-center">
           <Link href="/resources">
             <Button className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-light transition font-semibold">
