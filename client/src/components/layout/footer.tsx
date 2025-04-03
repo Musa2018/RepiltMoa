@@ -72,7 +72,7 @@ export const Footer = () => {
               <li>
                 <Link href="/careers">
                   <a className="text-gray-300 hover:text-white">
-                    Careers
+                    {t('nav.careers')}
                   </a>
                 </Link>
               </li>
