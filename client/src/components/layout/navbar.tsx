@@ -28,10 +28,11 @@ export const Navbar = () => {
     <nav className="mt-6">
       <ul className={`flex flex-wrap items-center justify-center md:justify-start gap-2 ${isRTL ? 'space-x-reverse' : ''}`}>
         <li>
-          <Link href="/">
-            <a className={`px-3 py-2 rounded-md ${isActive('/') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
-              {t('nav.home')}
-            </a>
+          <Link 
+            href="/" 
+            className={`px-3 py-2 rounded-md ${isActive('/') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}
+          >
+            {t('nav.home')}
           </Link>
         </li>
 
@@ -156,26 +157,29 @@ export const Navbar = () => {
         </li>
 
         <li>
-          <Link href="/news">
-            <a className={`px-3 py-2 rounded-md ${isActive('/news') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
-              {t('nav.news')}
-            </a>
+          <Link 
+            href="/news" 
+            className={`px-3 py-2 rounded-md ${isActive('/news') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}
+          >
+            {t('nav.news')}
           </Link>
         </li>
 
         <li>
-          <Link href="/projects">
-            <a className={`px-3 py-2 rounded-md ${isActive('/projects') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
-              {t('nav.projects')}
-            </a>
+          <Link 
+            href="/projects" 
+            className={`px-3 py-2 rounded-md ${isActive('/projects') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}
+          >
+            {t('nav.projects')}
           </Link>
         </li>
 
         <li>
-          <Link href="/contact">
-            <a className={`px-3 py-2 rounded-md ${isActive('/contact') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}>
-              {t('nav.contact')}
-            </a>
+          <Link 
+            href="/contact" 
+            className={`px-3 py-2 rounded-md ${isActive('/contact') ? 'text-white bg-primary hover:bg-primary-light' : 'text-primary hover:bg-gray-100'} transition`}
+          >
+            {t('nav.contact')}
           </Link>
         </li>
       </ul>
