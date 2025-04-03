@@ -10,11 +10,11 @@ export const HeroSection = () => {
   return (
     <section className="relative bg-primary overflow-hidden min-h-[70vh] flex items-center">
       <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8 lg:py-10 relative z-10">
-        <div className={`flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto ${isRTL ? 'md:flex-row-reverse' : ''}`}>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto" dir={isRTL ? 'rtl' : 'ltr'}>
           <div className={`w-full md:w-1/2 space-y-6 ${isRTL ? 'text-right' : ''}`}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('site.slogan')}</h2>
             <p className="text-white text-lg mb-6">{t('site.tagline')}</p>
-            <div className={`flex flex-wrap gap-4 ${isRTL ? 'justify-start md:justify-end' : 'justify-start'}`}>
+            <div className="flex flex-wrap gap-4 justify-start">
               <Link href="/services/farmer">
                 <Button variant="outline" className="px-6 py-3 bg-white text-primary rounded-md hover:bg-gray-100 transition font-semibold">
                   {t('home.hero.btn.farmer')}
