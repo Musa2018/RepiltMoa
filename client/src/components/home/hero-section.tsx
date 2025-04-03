@@ -8,10 +8,10 @@ export const HeroSection = () => {
   const t = (key: any) => getTranslation(language, key);
 
   return (
-    <section className="relative bg-primary overflow-hidden min-h-[85vh] flex items-center">
-      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10 lg:py-12 relative z-10">
-        <div className="flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
-          <div className={`w-full md:w-1/2 space-y-8 ${isRTL ? 'md:order-2 text-right' : ''}`}>
+    <section className="relative bg-primary overflow-hidden min-h-[70vh] flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8 lg:py-10 relative z-10">
+        <div className="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto">
+          <div className={`w-full md:w-1/2 space-y-6 ${isRTL ? 'md:order-2 text-right' : ''}`}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('site.slogan')}</h2>
             <p className="text-white text-lg mb-6">{t('site.tagline')}</p>
             <div className={`flex flex-wrap gap-4 ${isRTL ? 'justify-center' : 'justify-center'}`}>
