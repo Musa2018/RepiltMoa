@@ -14,7 +14,7 @@ export const HeroSection = () => {
           <div className={`w-full md:w-1/2 space-y-6 ${isRTL ? 'md:order-2 text-right' : ''}`}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('site.slogan')}</h2>
             <p className="text-white text-lg mb-6">{t('site.tagline')}</p>
-            <div className={`flex flex-wrap gap-4 ${isRTL ? 'justify-end' : ''}`}>
+            <div className={`flex flex-wrap gap-4 ${isRTL ? 'justify-center' : 'justify-center'}`}>
               <Link href="/services/farmer">
                 <Button variant="outline" className="px-6 py-3 bg-white text-primary rounded-md hover:bg-gray-100 transition font-semibold">
                   {t('home.hero.btn.farmer')}
