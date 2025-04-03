@@ -39,9 +39,9 @@ export const Header = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
             <img 
-              src="/palestine-logo.png"
-              alt="Ministry Logo"
-              className="h-16 w-16 mr-4 rtl:ml-4 rtl:mr-0 object-contain" 
+              src="/state-of-palestine-logo.png"
+              alt="State of Palestine Logo"
+              className="h-20 w-20 mr-4 rtl:ml-4 rtl:mr-0 object-contain" 
             />
             <div className={isRTL ? 'text-right' : ''}>
               <h1 className="text-xl font-bold text-primary">{t('site.name')}</h1>
