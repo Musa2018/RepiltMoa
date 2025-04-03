@@ -27,6 +27,7 @@ const translations = {
     "nav.resources.educational": "Educational Materials",
     "nav.news": "News",
     "nav.projects": "Projects",
+    "nav.careers": "Careers",
     "nav.contact": "Contact",
     
     // Home Page
@@ -120,6 +121,7 @@ const translations = {
     "nav.resources.educational": "المواد التعليمية",
     "nav.news": "الأخبار",
     "nav.projects": "المشاريع",
+    "nav.careers": "الوظائف",
     "nav.contact": "اتصل بنا",
     
     // Home Page
