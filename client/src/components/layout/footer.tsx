@@ -165,8 +165,8 @@ export const Footer = () => {
               <li className={`flex ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <i className={`fas fa-clock mt-1 ${isRTL ? 'mr-0 ml-3' : 'mr-3'} text-accent`}></i>
                 <span className="text-gray-300">
-                  Sunday-Thursday<br/>
-                  8:00 AM - 3:00 PM
+                  {t('contact.hours.days')}<br/>
+                  {t('contact.hours.time')}
                 </span>
               </li>
             </ul>

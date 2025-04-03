@@ -37,6 +37,8 @@ const translations = {
     "contact.address.ministry": "Ministry of Agriculture",
     "contact.address.city": "Al-Bireh, Ramallah",
     "contact.address.country": "Palestine",
+    "contact.hours.days": "Sunday-Thursday",
+    "contact.hours.time": "8:00 AM - 3:00 PM",
     
     // Home Page
     "home.hero.btn.farmer": "Farmer Services",
@@ -139,6 +141,8 @@ const translations = {
     "contact.address.ministry": "وزارة الزراعة",
     "contact.address.city": "البيرة، رام الله",
     "contact.address.country": "فلسطين",
+    "contact.hours.days": "الأحد - الخميس",
+    "contact.hours.time": "٨:٠٠ صباحاً - ٣:٠٠ مساءً",
     
     // Home Page
     "home.hero.btn.farmer": "خدمات المزارعين",
